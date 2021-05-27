@@ -1,6 +1,6 @@
 /* Design By: Mohamed Ali === Al Salem Johnson Controls */
 
-@import url("https://use.typekit.net/mzs4sen.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 
 :root {
   --first-color: #00539e;
@@ -21,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "proxima-nova", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -458,7 +458,7 @@ a {
   color: var(--third-color);
   font-weight: bold;
   z-index: 2;
-  font-size: 75px;
+  font-size: 72px;
   max-width: 50%;
   line-height: 1.1;
   letter-spacing: 2px;
@@ -672,7 +672,7 @@ a {
   margin-top: 30px;
 }
 .serv .galary.g1 .details:nth-child(2) .content {
-  bottom: 50px;
+  bottom: 25px;
 }
 .serv .galary.g1 .details .content {
   left: 0;
@@ -749,8 +749,8 @@ a {
   .serv .galary .details:nth-child(1) .content,
   .serv .galary.g1 .details .content {
     left: 30px;
-    bottom: 30px;
-    padding-right: 10px;
+    bottom: 15px;
+    padding-right: 0px;
   }
   .serv .galary.g2 {
     grid-template-columns: 1fr;
@@ -1362,6 +1362,9 @@ a {
 @media screen and (max-width: 767px) {
   .company {
     background: transparent;
+  }
+  .company h2 {
+    font-size: 22px;
   }
   .company .details .values {
     grid-template-columns: repeat(1, 1fr);
@@ -2691,6 +2694,7 @@ a {
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif !important;
   transition: all 0.2s;
 }
 .formbox form .input-box textarea {
@@ -2705,6 +2709,7 @@ a {
   width: 150px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
   border: none;
   outline: none;
   padding: 15px 20px;
