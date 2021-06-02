@@ -223,12 +223,10 @@ a {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* .nav .links .sub-content li:hover a {
-  opacity: 0.9;
-} */
 .nav .links .sub-content .sub-img img {
   width: 300px;
   height: 200px;
+  object-fit: cover;
 }
 .nav .links .sub-content .sub-img p {
   margin-top: 10px;
