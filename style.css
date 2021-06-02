@@ -2564,7 +2564,7 @@ a {
     ============================== */
 
 .hero-service {
-  background: url("img/service.jpeg") 40% 60% no-repeat;
+  background: url("img/service.jpg") 40% 60% no-repeat;
   background-size: cover;
   width: 100vw;
   height: 80vh;
