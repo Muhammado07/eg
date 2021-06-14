@@ -459,7 +459,7 @@ a {
   z-index: 2;
   font-size: 72px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 991px) {
@@ -474,16 +474,9 @@ a {
     background-position: 60% 5%;
   }
   .hero h1 {
-    max-width: 90%;
-    font-size: 36px;
-    padding-top: 210px;
-  }
-}
-@media screen and (max-width: 484px) {
-  .hero h1 {
     max-width: 100%;
-    font-size: 45px;
-    padding-top: 210px;
+    font-size: 36px;
+    padding-top: 190px;
   }
 }
 
@@ -1317,7 +1310,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -1326,7 +1319,8 @@ a {
   }
   .hero-about h1 {
     max-width: 100%;
-    font-size: 55px;
+    font-size: 38px;
+    padding-top: 190px;
   }
 }
 
@@ -1632,7 +1626,7 @@ a {
   z-index: 2;
   font-size: 65px;
   max-width: 50%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 /* Resi */
@@ -1734,7 +1728,7 @@ a {
     height: 60vh;
   }
   .hero-res h1 {
-    font-size: 45px;
+    font-size: 38px;
     max-width: 100%;
     padding-top: 150px;
   }
@@ -1920,7 +1914,7 @@ a {
   z-index: 2;
   font-size: 65px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 
@@ -2082,10 +2076,13 @@ a {
   margin-bottom: 15px;
 }
 .pop-content .mail-us p a {
-  color: var(--first-color);
+  color: var(--second-color);
   font-weight: bold;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
+}
+.pop-content .mail-us p a:hover {
+  opacity: 0.9;
 }
 .pop-over .cancel {
   position: absolute;
@@ -2101,9 +2098,9 @@ a {
     height: 60vh;
   }
   .hero-com h1 {
-    font-size: 45px;
+    font-size: 38px;
     max-width: 100%;
-    padding-top: 200px;
+    padding-top: 190px;
   }
   .product {
     padding-top: 20px;
@@ -2175,7 +2172,7 @@ a {
   z-index: 2;
   font-size: 65px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 
@@ -2338,9 +2335,9 @@ a {
     height: 60vh;
   }
   .hero-build h1 {
-    font-size: 45px;
+    font-size: 38px;
     max-width: 100%;
-    padding-top: 200px;
+    padding-top: 190px;
   }
   .home .head h2 {
     line-height: 1.4;
@@ -2405,7 +2402,7 @@ a {
   z-index: 2;
   font-size: 65px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 
@@ -2485,9 +2482,9 @@ a {
     height: 60vh;
   }
   .hero-after h1 {
-    font-size: 45px;
+    font-size: 38px;
     max-width: 100%;
-    padding-top: 200px;
+    padding-top: 190px;
   }
   .value .details h2 {
     line-height: 1.4;
@@ -2610,7 +2607,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -2619,7 +2616,8 @@ a {
   }
   .hero-contact h1 {
     max-width: 100%;
-    font-size: 55px;
+    font-size: 38px;
+    padding-top: 190px;
   }
 }
 
@@ -2652,7 +2650,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -2661,11 +2659,7 @@ a {
   }
   .hero-service h1 {
     max-width: 100%;
-    font-size: 55px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .hero-service h1 {
+    font-size: 38px;
     padding-top: 190px;
   }
 }
@@ -2700,13 +2694,13 @@ a {
   margin-bottom: 15px;
 }
 .contact .content .details p a {
-  color: var(--first-color);
+  color: var(--second-color);
   font-weight: bold;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
 }
 .contact .content .details p a:hover {
-  color: var(--second-color);
+  opacity: 0.9;
 }
 .contact .content .img {
   width: 300px;
@@ -2987,7 +2981,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -2996,7 +2990,8 @@ a {
   }
   .hero-smart h1 {
     max-width: 100%;
-    font-size: 55px;
+    font-size: 38px;
+    padding-top: 190px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3235,7 +3230,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -3244,7 +3239,8 @@ a {
   }
   .hero-network h1 {
     max-width: 100%;
-    font-size: 55px;
+    font-size: 38px;
+    padding-top: 190px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3282,7 +3278,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -3291,7 +3287,8 @@ a {
   }
   .hero-applied h1 {
     max-width: 100%;
-    font-size: 55px;
+    font-size: 38px;
+    padding-top: 190px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3381,11 +3378,15 @@ a {
 }
 .tabys .mail-us p a,
 .main-home .mail-us p a {
-  color: var(--first-color);
+  color: var(--second-color);
   font-weight: bold;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
   padding: 0;
+}
+.tabys .mail-us p a:hover,
+.main-home .mail-us p a:hover {
+  opacity: 0.9;
 }
 .custom-select-wrapper {
   display: none;
@@ -3556,6 +3557,10 @@ a {
   .tabys .pop-up {
     margin-top: 10px;
   }
+  .custom-select__trigger span,
+  .custom-option {
+    font-size: 13px;
+  }
 }
 
 /* =================================================
@@ -3586,7 +3591,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -3595,7 +3600,8 @@ a {
   }
   .hero-indust h1 {
     max-width: 100%;
-    font-size: 55px;
+    font-size: 38px;
+    padding-top: 190px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3675,8 +3681,8 @@ a {
   .pop-over .pop-content {
     overflow-y: scroll;
   }
-  .formbox {
-    margin-top: 150px;
+  .pop-content .formbox {
+    margin-top: 200px;
   }
   .mail-us {
     margin-bottom: 60px;
@@ -3712,7 +3718,7 @@ a {
   z-index: 2;
   font-size: 75px;
   max-width: 60%;
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 767px) {
@@ -3721,11 +3727,7 @@ a {
   }
   .hero-warranty h1 {
     max-width: 100%;
-    font-size: 55px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .hero-warranty h1 {
+    font-size: 38px;
     padding-top: 190px;
   }
 }
