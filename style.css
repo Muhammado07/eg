@@ -3382,6 +3382,9 @@ a {
 .main-apply .details:nth-child(odd) .des .content {
   padding: 30px 0 30px 100px;
 }
+.main-apply .details .des .content.add-content {
+  padding: 5px 0 30px 0px;
+}
 .main-apply .details .des .content ul {
   padding-top: 10px;
 }
