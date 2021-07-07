@@ -327,9 +327,9 @@
     <!-- End Products -->
 
     <div class="pop-over">
-      <div class="cancel">
+      <!-- <div class="cancel">
         <img src="img/cancel.svg" alt="close" />
-      </div>
+      </div> -->
       <div class="container">
         <div class="pop-content">
           <div class="formbox">
@@ -386,6 +386,7 @@
               </div>
               <div class="input-box">
                 <input type="submit" value="Send" />
+                <button class="cancel">Cancel</button>
               </div>
               <div class="mail-us">
                 <p>
@@ -564,9 +565,11 @@
 
       pops.addEventListener("click", function () {
         pop.classList.add("view");
+        document.body.classList.add("over-y");
       });
       cancel.addEventListener("click", function () {
         pop.classList.remove("view");
+        document.body.classList.remove("over-y");
       });
     </script>
     <script src="app.js"></script>

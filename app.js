@@ -21,8 +21,6 @@ window.onscroll = function () {
         caret.forEach(function (carets) {
             carets.setAttribute("src", "img/caret-white.svg")
         })
-
-
     }
 
 

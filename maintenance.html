@@ -275,7 +275,7 @@
     <!-- Main Home -->
     <div class="main-home">
       <div class="container">
-        <div class="tab-content">
+        <div class="tab-content sticky">
           <div class="taby">
             <h3 class="speci">
               <a href="maintenance.html">Operations And Maintenance</a>
@@ -314,9 +314,9 @@
               <button class="pop-btn" type="button">Contact us</button>
             </div>
             <div class="pop-over">
-              <div class="cancel">
+              <!-- <div class="cancel">
                 <img src="img/cancel.svg" alt="close" />
-              </div>
+              </div> -->
               <div class="container">
                 <div class="pop-content">
                   <div class="formbox">
@@ -378,6 +378,7 @@
                       </div>
                       <div class="input-box">
                         <input type="submit" value="Send" />
+                        <button class="cancel">Cancel</button>
                       </div>
                       <div class="mail-us">
                         <p>
@@ -706,15 +707,15 @@
 
     <script src="app.js"></script>
     <script>
-      const fixTab = document.querySelector(".tab-content");
-      // const stick = fixTab.offsetTop;
-      window.onscroll = function () {
-        if (window.pageYOffset > 500) {
-          fixTab.classList.add("sticky");
-        } else {
-          fixTab.classList.remove("sticky");
-        }
-      };
+      // const fixTab = document.querySelector(".tab-content");
+      // // const stick = fixTab.offsetTop;
+      // window.onscroll = function () {
+      //   if (window.pageYOffset > 500) {
+      //     fixTab.classList.add("sticky");
+      //   } else {
+      //     fixTab.classList.remove("sticky");
+      //   }
+      // };
 
       // Show Contact pop - up
       const pops = document.querySelector(".pop-up");
@@ -723,9 +724,11 @@
 
       pops.addEventListener("click", function () {
         pop.classList.add("view");
+        document.body.classList.add("over-y");
       });
       cancel.addEventListener("click", function () {
         pop.classList.remove("view");
+        document.body.classList.remove("over-y");
       });
 
       document
@@ -747,6 +750,17 @@
           }
         });
       }
+      const links = document.querySelectorAll(".golinks");
+      const x = window.matchMedia("(max-width: 767px)");
+      links.forEach((item) => {
+        item.addEventListener("click", () => {
+          const el = document.getElementById(item.getAttribute("data-link"));
+          el.scrollIntoView({ behavior: "smooth", block: "end" });
+          if (el === x) {
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        });
+      });
     </script>
   </body>
 </html>

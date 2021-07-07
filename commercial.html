@@ -275,8 +275,166 @@
     <!-- Products -->
     <div class="product">
       <div class="container">
+        <div class="tab-content sticky">
+          <div class="taby">
+            <h3 class="speci"><a href="applied.html">Commercial</a></h3>
+            <h3>
+              <a class="golinks" data-link="condens">Condensing Units</a>
+            </h3>
+            <h3>
+              <a class="golinks" data-link="commes"
+                >Commercial Packaged Units</a
+              >
+            </h3>
+            <h3>
+              <a class="golinks" data-link="chilly">Chilled Water Systems</a>
+            </h3>
+            <h3>
+              <a class="golinks" data-link="airy">Air Side Products</a>
+            </h3>
+            <h3>
+              <a class="golinks" data-link="thermo">Thermostat</a>
+            </h3>
+            <h3>
+              <a class="golinks" data-link="vrrf">VRF</a>
+            </h3>
+          </div>
+          <div class="custom-select-wrapper">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span>Condensing Units</span>
+                <div class="arrow"></div>
+              </div>
+              <div class="custom-options">
+                <a
+                  data-link="condens"
+                  class="custom-option golinks selected"
+                  data-value="Condensing Units"
+                  >Condensing Units</a
+                >
+                <a
+                  data-link="commes"
+                  class="custom-option golinks"
+                  data-value="Commercial Packaged Units"
+                  >Commercial Packaged Units</a
+                >
+                <a
+                  data-link="chilly"
+                  class="custom-option golinks"
+                  data-value="Chilled Water Systems"
+                  >Chilled Water Systems</a
+                >
+                <a
+                  data-link="airy"
+                  class="custom-option golinks"
+                  data-value="Air Side Products"
+                  >Air Side Products</a
+                >
+                <a
+                  data-link="thermo"
+                  class="custom-option golinks"
+                  data-value="Thermostat"
+                  >Thermostat</a
+                >
+                <a
+                  data-link="vrrf"
+                  class="custom-option golinks"
+                  data-value="VRF"
+                  >VRF</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="tabys">
+            <div class="pop-up">
+              <button class="pop-btn" type="button">Contact us</button>
+            </div>
+            <div class="pop-over">
+              <!-- <div class="cancel">
+                <img src="img/cancel.svg" alt="close" />
+              </div> -->
+              <div class="container">
+                <div class="pop-content">
+                  <div class="formbox">
+                    <form>
+                      <div class="input-box">
+                        <input type="text" required />
+                        <span>First Name*</span>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" required />
+                        <span>Surname*</span>
+                      </div>
+                      <div class="input-box">
+                        <input type="text" required />
+                        <span>Email*</span>
+                      </div>
+                      <div class="input-box">
+                        <input type="number" required />
+                        <span>Phone Number</span>
+                      </div>
+
+                      <div class="input-box policy">
+                        <div class="checkbox-wrap">
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="policy"
+                              name="policy"
+                              required
+                            />
+                            <label for="policy"
+                              >I agree to the
+                              <a
+                                href="https://www.johnsoncontrols.com/legal/terms"
+                                target="_blank"
+                                >terms and conditions</a
+                              ></label
+                            >
+                            <div class="check"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-box policy pos">
+                        <div class="checkbox-wrap">
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="authorize"
+                              name="authorize"
+                              required
+                            />
+                            <label for="authorize"
+                              >I authorize Al Salem Johnson Controls to use my
+                              email for sharing news and commercial information
+                            </label>
+                            <div class="check"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-box">
+                        <input type="submit" value="Send" />
+                        <button class="cancel">Cancel</button>
+                      </div>
+                      <div class="mail-us">
+                        <p>
+                          - Or you can call our Customer Care Center on
+                          <a class="number" href="tel:0225370131">0225370131</a>
+                          or
+                          <a href="mailto:info.egypt@jci.com" target="_blank"
+                            >info.egypt@jci.com</a
+                          >
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="content">
-          <div class="pro">
+          <div class="pro" id="condens">
             <div class="details">
               <h2>Condensing Units</h2>
               <h4>Air Cooled Condensing Units</h4>
@@ -293,7 +451,7 @@
               <img src="img/resi/condensing-side.png" alt="Condensing Units" />
             </div>
           </div>
-          <div class="pro">
+          <div class="pro" id="commes">
             <div class="img">
               <img
                 src="img/resi/package-side.jpg"
@@ -313,7 +471,7 @@
               </div>
             </div>
           </div>
-          <div class="pro">
+          <div class="pro" id="chilly">
             <div class="details">
               <h2>Chilled Water Systems</h2>
               <h4>Cut energy costs with YORK Chilled Water Systems</h4>
@@ -335,7 +493,7 @@
               <img src="img/comm/4.jpg" alt="Chilled Water Systems" />
             </div>
           </div>
-          <div class="pro">
+          <div class="pro" id="airy">
             <div class="img">
               <img src="img/comm/5.png" alt="Air Side Products" />
             </div>
@@ -359,7 +517,7 @@
               </div>
             </div>
           </div>
-          <div class="pro">
+          <div class="pro" id="thermo">
             <div class="details">
               <h2>Thermostat</h2>
               <h4>
@@ -384,7 +542,7 @@
               <img src="img/comm/6.jpg" alt="Thermostat" />
             </div>
           </div>
-          <div class="pro">
+          <div class="pro" id="vrrf">
             <div class="img min">
               <img
                 src="img/resi/vrf-side.jpg"
@@ -414,9 +572,9 @@
       <button class="pop-btn" type="button">Contact us</button>
     </div>
     <div class="pop-over">
-      <div class="cancel">
+      <!-- <div class="cancel">
         <img src="img/cancel.svg" alt="close" />
-      </div>
+      </div> -->
       <div class="container">
         <div class="pop-content">
           <div class="formbox">
@@ -473,6 +631,7 @@
               </div>
               <div class="input-box">
                 <input type="submit" value="Send" />
+                <button class="cancel">Cancel</button>
               </div>
               <div class="mail-us">
                 <p>
@@ -651,9 +810,42 @@
 
       pops.addEventListener("click", function () {
         pop.classList.add("view");
+        document.body.classList.add("over-y");
       });
       cancel.addEventListener("click", function () {
         pop.classList.remove("view");
+        document.body.classList.remove("over-y");
+      });
+      document
+        .querySelector(".custom-select-wrapper")
+        .addEventListener("click", function () {
+          this.querySelector(".custom-select").classList.toggle("open");
+        });
+
+      for (const option of document.querySelectorAll(".custom-option")) {
+        option.addEventListener("click", function () {
+          if (!this.classList.contains("selected")) {
+            this.parentNode
+              .querySelector(".custom-option.selected")
+              .classList.remove("selected");
+            this.classList.add("selected");
+            this.closest(".custom-select").querySelector(
+              ".custom-select__trigger span"
+            ).textContent = this.textContent;
+          }
+        });
+      }
+
+      const links = document.querySelectorAll(".golinks");
+      const x = window.matchMedia("(max-width: 767px)");
+      links.forEach((item) => {
+        item.addEventListener("click", () => {
+          const el = document.getElementById(item.getAttribute("data-link"));
+          el.scrollIntoView({ behavior: "smooth", block: "end" });
+          if (el === x) {
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        });
       });
     </script>
     <script src="app.js"></script>

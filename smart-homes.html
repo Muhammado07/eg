@@ -274,13 +274,17 @@
     <!-- Main Home -->
     <div class="main-home">
       <div class="container">
-        <div class="tab-content">
+        <div class="tab-content sticky">
           <div class="taby">
             <h3 class="speci">
               <a href="smart-homes.html">Smart Homes</a>
             </h3>
-            <h3><a href="#automation">Home Automation</a></h3>
-            <h3><a href="#solution">Security Solutions</a></h3>
+            <h3>
+              <a class="golinks" data-link="automation">Home Automation</a>
+            </h3>
+            <h3>
+              <a class="golinks" data-link="solution">Security Solutions</a>
+            </h3>
           </div>
           <div class="custom-select-wrapper">
             <div class="custom-select">
@@ -290,14 +294,14 @@
               </div>
               <div class="custom-options">
                 <a
-                  href="#automation"
-                  class="custom-option selected"
+                  data-link="automation"
+                  class="custom-option golinks selected"
                   data-value="Home Automation"
                   >Home Automation</a
                 >
                 <a
-                  href="#solution"
-                  class="custom-option"
+                  data-link="solution"
+                  class="custom-option golinks"
                   data-value="Security Solutions"
                   >Security Solutions</a
                 >
@@ -309,9 +313,9 @@
               <button class="pop-btn" type="button">Contact us</button>
             </div>
             <div class="pop-over">
-              <div class="cancel">
+              <!-- <div class="cancel">
                 <img src="img/cancel.svg" alt="close" />
-              </div>
+              </div> -->
               <div class="container">
                 <div class="pop-content">
                   <div class="formbox">
@@ -373,6 +377,7 @@
                       </div>
                       <div class="input-box">
                         <input type="submit" value="Send" />
+                        <button class="cancel">Cancel</button>
                       </div>
                       <div class="mail-us">
                         <p>
@@ -391,8 +396,9 @@
             </div>
           </div>
         </div>
+        <div id="automation" style="height: 1px"></div>
         <div class="details">
-          <div class="cont" id="automation">
+          <div class="cont">
             <div class="head">
               <h2>For a Smart Comfortable Home</h2>
               <p>
@@ -439,8 +445,9 @@
             </div>
           </div>
         </div>
+        <div id="solution" style="height: 1px"></div>
         <div class="details">
-          <div class="cont" id="solution">
+          <div class="cont">
             <div class="head">
               <h2>
                 Global Security Technology and Systems Integration Services
@@ -647,15 +654,6 @@
 
     <script src="app.js"></script>
     <script>
-      const fixTab = document.querySelector(".tab-content");
-      // const stick = fixTab.offsetTop;
-      window.onscroll = function () {
-        if (window.pageYOffset > 500) {
-          fixTab.classList.add("sticky");
-        } else {
-          fixTab.classList.remove("sticky");
-        }
-      };
       // Show Contact pop - up
       const pops = document.querySelector(".pop-up");
       const pop = document.querySelector(".pop-over");
@@ -663,9 +661,11 @@
 
       pops.addEventListener("click", function () {
         pop.classList.add("view");
+        document.body.classList.add("over-y");
       });
       cancel.addEventListener("click", function () {
         pop.classList.remove("view");
+        document.body.classList.remove("over-y");
       });
 
       document
@@ -687,6 +687,18 @@
           }
         });
       }
+      const links = document.querySelectorAll(".golinks");
+      const x = window.matchMedia("(max-width: 767px)");
+      links.forEach((item) => {
+        item.addEventListener("click", () => {
+          const el = document.getElementById(item.getAttribute("data-link"));
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          if (el === x) {
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        });
+      });
     </script>
   </body>
 </html>

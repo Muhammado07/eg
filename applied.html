@@ -272,13 +272,21 @@
     <!-- Main Apply -->
     <div class="main-apply">
       <div class="container">
-        <div class="tab-content">
+        <div class="tab-content sticky">
           <div class="taby">
             <h3 class="speci"><a href="applied.html">Chillers</a></h3>
-            <h3><a href="#aircool">Air Cooled Chillers</a></h3>
-            <h3><a href="#watercool">Water Cooled Chillers</a></h3>
-            <h3><a href="#airside">Airside Products</a></h3>
-            <h3><a href="#datacenter">Data Centers CRAC Units</a></h3>
+            <h3>
+              <a class="golinks" data-link="aircool">Air Cooled Chillers</a>
+            </h3>
+            <h3>
+              <a class="golinks" data-link="watercool">Water Cooled Chillers</a>
+            </h3>
+            <h3><a class="golinks" data-link="airside">Airside Products</a></h3>
+            <h3>
+              <a class="golinks" data-link="datacenter"
+                >Data Centers CRAC Units</a
+              >
+            </h3>
           </div>
           <div class="custom-select-wrapper">
             <div class="custom-select">
@@ -288,26 +296,26 @@
               </div>
               <div class="custom-options">
                 <a
-                  href="#aircool"
-                  class="custom-option selected"
+                  data-link="aircool"
+                  class="custom-option golinks selected"
                   data-value="Air Cooled Chillers"
                   >Air Cooled Chillers</a
                 >
                 <a
-                  href="#watercool"
-                  class="custom-option"
+                  data-link="watercool"
+                  class="custom-option golinks"
                   data-value="Water Cooled Chillers"
                   >Water Cooled Chillers</a
                 >
                 <a
-                  href="#airside"
-                  class="custom-option"
+                  data-link="airside"
+                  class="custom-option golinks"
                   data-value="Airside Products"
                   >Airside Products</a
                 >
                 <a
-                  href="#datacenter"
-                  class="custom-option"
+                  data-link="datacenter"
+                  class="custom-option golinks"
                   data-value="Data Centers CRAC Units"
                   >Data Centers CRAC Units</a
                 >
@@ -319,9 +327,9 @@
               <button class="pop-btn" type="button">Contact us</button>
             </div>
             <div class="pop-over">
-              <div class="cancel">
+              <!-- <div class="cancel">
                 <img src="img/cancel.svg" alt="close" />
-              </div>
+              </div> -->
               <div class="container">
                 <div class="pop-content">
                   <div class="formbox">
@@ -383,6 +391,7 @@
                       </div>
                       <div class="input-box">
                         <input type="submit" value="Send" />
+                        <button class="cancel">Cancel</button>
                       </div>
                       <div class="mail-us">
                         <p>
@@ -677,15 +686,15 @@
 
     <script src="app.js"></script>
     <script>
-      const fixTab = document.querySelector(".tab-content");
-      // const stick = fixTab.offsetTop;
-      window.onscroll = function () {
-        if (window.pageYOffset > 500) {
-          fixTab.classList.add("sticky");
-        } else {
-          fixTab.classList.remove("sticky");
-        }
-      };
+      // const fixTab = document.querySelector(".tab-content");
+      // // const stick = fixTab.offsetTop;
+      // window.onscroll = function () {
+      //   if (window.pageYOffset > 500) {
+      //     fixTab.classList.add("sticky");
+      //   } else {
+      //     fixTab.classList.remove("sticky");
+      //   }
+      // };
       // Show Contact pop - up
       const pops = document.querySelector(".pop-up");
       const pop = document.querySelector(".pop-over");
@@ -693,9 +702,11 @@
 
       pops.addEventListener("click", function () {
         pop.classList.add("view");
+        document.body.classList.add("over-y");
       });
       cancel.addEventListener("click", function () {
         pop.classList.remove("view");
+        document.body.classList.remove("over-y");
       });
 
       document
@@ -717,6 +728,18 @@
           }
         });
       }
+
+      const links = document.querySelectorAll(".golinks");
+      const x = window.matchMedia("(max-width: 767px)");
+      links.forEach((item) => {
+        item.addEventListener("click", () => {
+          const el = document.getElementById(item.getAttribute("data-link"));
+          el.scrollIntoView({ behavior: "smooth", block: "end" });
+          if (el === x) {
+            el.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        });
+      });
     </script>
   </body>
 </html>
