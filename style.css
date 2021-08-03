@@ -3891,16 +3891,15 @@ a {
 }
 .formbox form .input-box .eror {
   position: absolute;
-  top: -40px;
-  left: 20%;
-  background: #f8d7da;
-  padding: 10px;
+  bottom: -18px;
+  left: 0;
+  padding-top: 0;
 }
 .formbox form .input-box .eror p {
   color: #d8000c;
   font-size: 14px;
 }
-.formbox form .input-box .eror::before {
+/* .formbox form .input-box .eror::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -3911,4 +3910,4 @@ a {
   border-color: #f8d7da transparent transparent transparent;
   left: 50%;
   bottom: -20px;
-}
+} */
