@@ -3893,12 +3893,12 @@ a {
   position: absolute;
   top: -40px;
   left: 20%;
-  background: red;
+  background: #f8d7da;
   padding: 10px;
-  color: #fff;
 }
 .formbox form .input-box .eror p {
-  color: var(--third-color);
+  color: #721c24;
+  font-size: 14px;
 }
 .formbox form .input-box .eror::before {
   content: "";
@@ -3908,7 +3908,7 @@ a {
   position: absolute;
   border-width: 10px;
   border-style: solid;
-  border-color: red transparent transparent transparent;
+  border-color: #f8d7da transparent transparent transparent;
   left: 50%;
   bottom: -20px;
 }
