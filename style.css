@@ -3885,3 +3885,30 @@ a {
 .toltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.formbox form .input-box span {
+  bottom: 10px;
+}
+.formbox form .input-box .eror {
+  position: absolute;
+  top: -40px;
+  left: 20%;
+  background: var(--first-color);
+  padding: 10px;
+  color: #fff;
+}
+.formbox form .input-box .eror p {
+  color: var(--third-color);
+}
+.formbox form .input-box .eror::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--first-color) transparent transparent transparent;
+  left: 50%;
+  bottom: -20px;
+}
