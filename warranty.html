@@ -297,14 +297,24 @@
               <form>
                 <div class="units">
                   <div class="input-box">
-                    <input type="text" required />
+                    <input
+                      type="text"
+                      oninvalid="this.setCustomValidity('Enter First Name Here')"
+                      onchange="this.setCustomValidity('')"
+                      required
+                    />
                     <span>First Name*</span>
                     <div class="eror">
                       <p>Please enter correct name</p>
                     </div>
                   </div>
                   <div class="input-box">
-                    <input type="text" required />
+                    <input
+                      type="text"
+                      oninvalid="this.setCustomValidity('Enter Last Name Here')"
+                      onchange="this.setCustomValidity('')"
+                      required
+                    />
                     <span>Surname*</span>
                     <!-- <div class="eror">
                       <p>Please enter correct name</p>
@@ -313,14 +323,24 @@
                 </div>
                 <div class="units">
                   <div class="input-box">
-                    <input type="text" required />
+                    <input
+                      type="text"
+                      oninvalid="this.setCustomValidity('Enter Email Here')"
+                      onchange="this.setCustomValidity('')"
+                      required
+                    />
                     <span>Email*</span>
                     <div class="eror">
                       <p>Please enter correct name</p>
                     </div>
                   </div>
                   <div class="input-box">
-                    <input type="number" required />
+                    <input
+                      type="number"
+                      oninvalid="this.setCustomValidity('Enter Your number Here')"
+                      onchange="this.setCustomValidity('')"
+                      required
+                    />
                     <span>Phone Number</span>
                     <div class="eror">
                       <p>Please enter correct name</p>
@@ -390,7 +410,7 @@
                   </div>
                 </div>
                 <div class="input-box">
-                  <input type="submit" value="Send" />
+                  <input type="submit" value="Send" id="submit" />
                 </div>
               </form>
             </div>
